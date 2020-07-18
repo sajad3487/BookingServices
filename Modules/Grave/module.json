@@ -1,0 +1,13 @@
+{
+    "name": "Grave",
+    "alias": "grave",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Grave\\Providers\\GraveServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
