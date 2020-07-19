@@ -1,4 +1,6 @@
 {
     "Discount": true,
-    "Grave": true
+    "Grave": true,
+    "Service": true,
+    "Category": true
 }
