@@ -49,7 +49,7 @@ class DiscountController extends Controller
      */
     public function show($id)
     {
-
+        return $this->discountService->getDiscountCodeWithId($id);
     }
 
     /**

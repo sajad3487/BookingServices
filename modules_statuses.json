@@ -2,5 +2,6 @@
     "Discount": true,
     "Grave": true,
     "Service": true,
-    "Category": true
+    "Category": true,
+    "Order": true
 }

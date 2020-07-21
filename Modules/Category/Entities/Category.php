@@ -9,9 +9,11 @@ class category extends Model
     protected $fillable = [
         'id',
         'title',
+        'description',
         'parent_id',
         'price',
         'status',
+        'public',
     ];
 
     public function child (){
@@ -20,5 +22,9 @@ class category extends Model
 
     public function grandchild (){
         return $this->hasMany('Modules\Category\Entities\Category','parent_id','id');
+    }
+
+    public function orders (){
+        return $this->belongsToMany('Modules\Order\Entities\Order');
     }
 }

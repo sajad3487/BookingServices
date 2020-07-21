@@ -27,4 +27,9 @@ class DiscountService
     public function createDiscountCode($data){
         return $this->discountRepo->create($data);
     }
+
+    public function getDiscountCodeWithId ($id){
+        return $this->discountRepo->getById($id);
+    }
+
 }

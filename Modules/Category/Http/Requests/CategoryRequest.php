@@ -17,16 +17,20 @@ class CategoryRequest extends FormRequest
             case 'POST':
                 return [
                     'title' => 'required| string',
+                    'description' => 'string',
                     'parent_id' => 'exists:categories,id',
                     'price' => 'required|numeric',
                     'status' => 'required| numeric|between:0,4',
+                    'public' => 'numeric|between:0,1',
                 ];
             case 'PUT' || 'PATCH':
                 return [
                     'title' => 'string',
+                    'description' => 'string',
                     'parent_id' => 'exists:categories,id',
                     'price' => 'numeric',
                     'status' => ' numeric|between:0,4',
+                    'public' => ' numeric|between:0,1',
                 ];
                 break;
         }

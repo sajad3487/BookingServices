@@ -13,5 +13,5 @@ use Illuminate\Http\Request;
 |
 */
 Route::group(['middleware'=>'auth:api'],function (){
-    Route::resource('category','categoryController')->except('create','edit');
+    Route::resource('category','CategoryController')->except('create','edit');
 });
