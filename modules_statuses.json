@@ -3,5 +3,7 @@
     "Grave": true,
     "Service": true,
     "Category": true,
-    "Order": true
+    "Order": true,
+    "Wallet": true,
+    "Financial": true
 }

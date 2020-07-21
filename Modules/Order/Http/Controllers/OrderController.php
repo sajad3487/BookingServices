@@ -85,7 +85,10 @@ class OrderController extends Controller
 
         $data['user_id'] =$previousOrder['user_id'];
         $data['grave_id'] =$previousOrder['grave_id'];
-        $data['categories'] =$previousOrder['categories'];
-        dd($data['categories']);
+        $category = $previousOrder['categories'];
+        foreach ($category as $key=>$cat){
+            $data['category'][$key]= $cat['id'];
+        }
+        return $this->orderService->createNewOrder($data);
     }
 }
