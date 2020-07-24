@@ -74,4 +74,8 @@ class CategoryController extends Controller
     {
         return $this->categoryService->deleteCategory($id);
     }
+
+    public function showPublic (){
+        return $this->categoryService->getPublicCategory();
+    }
 }

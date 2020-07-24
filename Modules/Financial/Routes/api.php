@@ -12,7 +12,8 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
-Route::middleware('auth:api')->get('/financial', function (Request $request) {
-    return $request->user();
+Route::group(['middleware'=>'auth:api'],function(){
+    Route::post('/wallet/','WalletController@store');
+    Route::get('/wallet/','WalletController@show');
+    Route::put('/wallet/','WalletController@update');
 });

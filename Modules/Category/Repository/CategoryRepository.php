@@ -20,4 +20,13 @@ class CategoryRepository extends Repository
             ->with('child.grandchild')
             ->get();
     }
+
+    public function getActivePublicCategory (){
+        return category::where('parent_id',0)
+            ->where('status',1)
+            ->where('public',1)
+            ->with('child')
+            ->with('child.grandchild')
+            ->get();
+    }
 }

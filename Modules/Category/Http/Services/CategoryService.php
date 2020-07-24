@@ -40,4 +40,8 @@ class CategoryService
         return $this->categoryRepo->delete($id);
     }
 
+    public function getPublicCategory (){
+        return $this->categoryRepo->getActivePublicCategory();
+    }
+
 }

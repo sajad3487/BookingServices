@@ -14,4 +14,5 @@ use Illuminate\Http\Request;
 */
 Route::group(['middleware'=>'auth:api'],function (){
     Route::resource('category','CategoryController')->except('create','edit');
+    Route::get('category/public/active','CategoryController@showPublic');
 });
