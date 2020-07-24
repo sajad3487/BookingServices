@@ -21,8 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e8f84a31-101a-424e-873b-e4f736079d5f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Order/Http/Controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Order/Http/Controllers/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules_statuses.json" beforeDir="false" afterPath="$PROJECT_DIR$/modules_statuses.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Order/Routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Order/Routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,11 +203,12 @@
       <workItem from="1595066396601" duration="11747000" />
       <workItem from="1595172489099" duration="9994000" />
       <workItem from="1595317146494" duration="17467000" />
+      <workItem from="1595438690580" duration="1907000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

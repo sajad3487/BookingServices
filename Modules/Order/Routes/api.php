@@ -18,6 +18,6 @@ Route::group(['middleware'=>'auth:api'],function (){
    Route::post('order','OrderController@store')->name('order.create');
    Route::patch('order/{orderId}','OrderController@update')->name('order.update');
    Route::delete('order/{orderId}','OrderController@destroy')->name('order.delete');
-   Route::get('order/','OrderController@ordersOfUser')->name('order.orderOfUser');;
+   Route::get('order/{userId}','OrderController@ordersOfUser')->name('order.orderOfUser');;
    Route::get('reorder/{orderId}','OrderController@reorder')->name('reorder');;
 });
